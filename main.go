@@ -1,3 +1,11 @@
 package main
 
-import 
+import "learnGo/config"
+
+func initializeMinicalcRouter() {
+	config.HandleMinicalcRouter()
+}
+
+func main() {
+	initializeMinicalcRouter()
+}
