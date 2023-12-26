@@ -9,7 +9,17 @@ import (
 )
 
 var (
-	mu      sync.Mutex // Mutex to synchronize access to the result
+	/*
+		A mutex (short for "mutual exclusion") is a
+		synchronization primitive used in concurrent
+		programming to protect shared data from being
+		accessed simultaneously by multiple goroutines
+		(concurrent functions or threads).
+		Mutexes ensure that only one goroutine can access
+		a critical section of code at a time, preventing
+		data races and maintaining data consistency.
+	*/
+	mu      sync.Mutex
 	result  models.CalculationResult
 	hasData bool
 )
